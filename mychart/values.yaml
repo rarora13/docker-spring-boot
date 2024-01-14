@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: myacrrepo531.azurecr.io/myacrrepo531
+  repository: 471112784033.dkr.ecr.eu-north-1.amazonaws.com/rakesh
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: LoadBalancer
-  port: 80
+  port: 8080
 
 ingress:
   enabled: false
